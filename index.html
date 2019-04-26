@@ -4,12 +4,14 @@
 		<meta charset="UTF-8">
 		<title>To Do List</title>
 	</head>
-	<body class="app">
-		<header></header>
-		<main>
+	<body>
+		<header class="app"> 
+		
+		</header>
+		<main> 
 		<article>
 			<h2>Todo List</h2>
-			<input type="text" placeholder="New item" v-model="" >
+			<input type="text" placeholder="New item" v-model="newTodo" @keyup.enter="addTodo(newTodo)">
 			<button type="button">Add</button>
 			<button type="button">Cancel</button>
 		</article>
