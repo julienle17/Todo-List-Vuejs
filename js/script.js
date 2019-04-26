@@ -9,8 +9,11 @@ new Vue ({
 			this.todos.push(todo)
 			this.newTodo = ''
 		},
-		removeTodo: function() {
-
-		}
+		removeTodo: function(index) {
+			this.todos.splice(index, 1)
+		},
+		cancelTodo: function() {
+			this.newTodo = ''
+		},
 	}
 })
