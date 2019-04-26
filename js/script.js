@@ -15,5 +15,8 @@ new Vue ({
 		cancelTodo: function() {
 			this.newTodo = ''
 		},
+		clearAllTodo: function() {
+			this.todos = []
+		},
 	}
 })
