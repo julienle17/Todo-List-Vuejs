@@ -5,15 +5,19 @@
 		<title>To Do List</title>
 	</head>
 	<body>
-		<header class="app"> 
-		
+		<header> 
+
 		</header>
 		<main> 
-		<article>
+		<article class="app">
 			<h2>Todo List</h2>
 			<input type="text" placeholder="New item" v-model="newTodo" @keyup.enter="addTodo(newTodo)">
-			<button type="button">Add</button>
-			<button type="button">Cancel</button>
+			<button type="button" @click="addTodo(newTodo)">Add</button>
+			<ul>
+				<li v-for="(todo, index) in todos" :key="index">{{todo}}</li>
+				<button type="button" @click="removeTodo()">Cancel</button>
+			</ul>
+			<button @click="clearAllTodo()">Clear</button>
 		</article>
 		</main>
 		<footer></footer>

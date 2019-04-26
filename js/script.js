@@ -5,18 +5,18 @@ new Vue ({
 		todos: []
 	},
 	methods: {
-		addTodo: function(todo) {
-			this.todos.push(todo)
-			this.newTodo = ''
+		addTodo: function() {
+				this.todos.push(this.newTodo)
+				this.newTodo = ''
 		},
 		removeTodo: function(index) {
-			this.todos.splice(index, 1)
+				this.todos.splice(index, 1)
 		},
 		cancelTodo: function() {
-			this.newTodo = ''
+				this.newTodo = ''
 		},
 		clearAllTodo: function() {
-			this.todos = []
+				this.todos = []
 		},
 	}
 })
