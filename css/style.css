@@ -22,3 +22,15 @@
 .btn-large {
 	margin: 0.5em;
 }
+
+.header {
+	padding: 1.5em;
+}
+
+.main {
+	min-height: 50vh;
+}
+
+.container {
+	padding-top: 7%;
+}

@@ -11,8 +11,8 @@
 		<header class="light-blue header"> 
 			<h1 class="center orange-text">Todo List</h1>
 		</header>
-		<main> 
-		<article class="app container">
+		<main class="main grey darken-2"> 
+		<article class="app container center-align">
 			<input type="text" placeholder="New item" v-model="newTodo" @keyup.enter="addTodo(newTodo)">
 			<ul>
 				<li class="collection-item center-align" v-for="(todo, index) in todos" :key="index">{{todo}}<i class="fas fa-trash-alt right-align" @click="removeTodo()"></i></li>
@@ -21,7 +21,12 @@
 			<button class="btn-large waves-effect waves-light orange" @click="clearAllTodo()">Clear</button>
 		</article>
 		</main>
-		<footer></footer>
+		<footer class="page-footer">
+		
+		
+		
+		
+		</footer>
 		<script src=js/materialize.js></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.js"></script>
 		<script src="js/script.js"></script>
