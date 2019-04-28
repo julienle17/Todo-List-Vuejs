@@ -8,6 +8,7 @@ new Vue ({
 		addTodo: function() {
 				this.todos.push(this.newTodo)
 				this.newTodo = ''
+				completed: false
 		},
 		removeTodo: function(index) {
 				this.todos.splice(index, 1)

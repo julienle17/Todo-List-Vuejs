@@ -14,7 +14,7 @@
 		<main> 
 		<article class="app container">
 			<input type="text" placeholder="New item" v-model="newTodo" @keyup.enter="addTodo(newTodo)">
-			<ul> 
+			<ul>
 				<li class="collection-item center-align" v-for="(todo, index) in todos" :key="index">{{todo}}<i class="fas fa-trash-alt right-align" @click="removeTodo()"></i></li>
 			</ul>
 			<button type="button" class="btn-large waves-effect waves-light orange" @click="addTodo(newTodo)">Add</button>
