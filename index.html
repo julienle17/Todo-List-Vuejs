@@ -8,17 +8,16 @@
 		<title>ToDo List</title>
 	</head>
 	<body>
-		<header> 
+		<header class="light-blue header"> 
 			<h1 class="center orange-text">Todo List</h1>
 		</header>
 		<main> 
 		<article class="app container">
 			<input type="text" placeholder="New item" v-model="newTodo" @keyup.enter="addTodo(newTodo)">
 			<ul> 
-				<li class="collection-item" v-for="(todo, index) in todos" :key="index">{{todo}}<i class="fas fa-trash-alt" @click="removeTodo()"></i></li>
+				<li class="collection-item center-align" v-for="(todo, index) in todos" :key="index">{{todo}}<i class="fas fa-trash-alt right-align" @click="removeTodo()"></i></li>
 			</ul>
 			<button type="button" class="btn-large waves-effect waves-light orange" @click="addTodo(newTodo)">Add</button>
-			<button type="button" class="btn-large waves-effect waves-light orange" @click="removeTodo()">Cancel</button>
 			<button class="btn-large waves-effect waves-light orange" @click="clearAllTodo()">Clear</button>
 		</article>
 		</main>
