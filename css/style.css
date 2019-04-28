@@ -34,3 +34,7 @@
 .container {
 	padding-top: 7%;
 }
+
+.page-footer {
+	min-height: 20vh;
+}
